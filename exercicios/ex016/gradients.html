@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes</title>
+    <style>
+        * { /* * -> configurações globais CSS */
+            height: 100%;
+        }
+        body{
+           /*background-image: radial-gradient(circle at center, red 0, blue, green 100%);*/
+           
+            /*background-image: radial-gradient(circle at center in hsl longer hue, red 0, blue, green 100%);*/
+
+
+           /* background-image: radial-gradient(
+            farthest-corner at 40px 40px,
+            rgb(52, 113, 184) 0%,
+            rgb(80, 214, 255) 50%,
+            #43e 100%);*/
+            
+            background: radial-gradient(ellipse at top left, #580424, transparent),
+            radial-gradient(ellipse at bottom right, #1c1731, transparent);
+
+            background-attachment: fixed;
+
+            font-family: Arial, Helvetica, sans-serif;  
+            font-weight: normal; 
+            background-color: black;
+            
+        }
+        h1{
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando gradientes em CSS</h1>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Testando imagens dinâmicas</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="Imagem flexível">
+    </picture>
+    <hr>
+    <h1>Músiquínea Patpat (forests)</h1>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="audio/in Avalon - phasing out - 01 forests.wav" type="audio/wav">
+        <source src="audio/in Avalon - phasing out - 01 forests.mp3" type="audio/mpeg">
+        <source src="audio/in Avalon - phasing out - 01 forests.ogg" type="audio/ogg">
+        <p>Seu navegador não suporta áudio <a href="audio/in Avalon - phasing out - 01 forests.mp3" download="in Avalon - phasing out - 01 forests.mp3" type="audio/mpeg"></a></p>
+    </audio>
+
+    <h1>Vídeos</h1>
+    <h2>HTML embed direto do youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Bf7MjRMfuJ8?si=MXkcnHn4fYeufRMV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Vídeo em hospedagem própria</h2>
+    <video width="600px" poster="thumb.jpg"controls autoplay>
+        <source src="Sing About Me, I m Dying Of Thirst.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
