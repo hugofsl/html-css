@@ -10,9 +10,9 @@
 
  Você pode conferir alguns de meus projetos pelos links abaixo.
 
- <a href="/desafios/d10%20-%20primeiro%20projeto"> Mini Projeto - Desafio 10</a>
+ <a target="_blank" href="/desafios/d10%20-%20primeiro%20projeto"> Mini Projeto - Desafio 10</a>
  <br>
- <a href="/desafios/d11%20-%20astronauta"> Astronauta - Desafio 11</a>
+ <a target="_blank" href="/desafios/d11%20-%20astronauta"> Astronauta - Desafio 11</a>
 
  
  
