@@ -8,5 +8,11 @@
 
  Este repositório é destinado aos meus exercícios e desafios do Curso de HTML e CSS com Gustavo Guanabara - Curso em Vídeo.
 
+ Você pode conferir alguns de meus projetos pelos links abaixo.
+
+ <a href="/desafios/d10%20-%20primeiro%20projeto"> Mini Projeto - Desafio 10</a>
+ <br>
+ <a href="/desafios/d11%20-%20astronauta"> Astronauta - Desafio 11</a>
+
  
  
