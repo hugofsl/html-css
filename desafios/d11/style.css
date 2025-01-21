@@ -30,5 +30,5 @@ img#astro{
 }
 
 img#astro:hover{
-    transform: scale(1.2) rotate(180deg); /* Added flipping animation */
+    transform: rotate(180deg); /* Added flipping animation */
 }
