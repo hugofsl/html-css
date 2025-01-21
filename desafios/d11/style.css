@@ -25,10 +25,10 @@ img#astro{
     margin: 0;
     max-width: 50%;
     align-items: center;
-    transition: all 0.3s;
+    transition: all 1s;
     box-sizing: border-box;
 }
 
 img#astro:hover{
-    transform: scale(1.3) rotate(360deg) rotateY(180deg); /* Added flipping animation */
+    transform: scale(1.2) rotate(180deg); /* Added flipping animation */
 }
