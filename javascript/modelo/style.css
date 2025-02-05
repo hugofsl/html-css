@@ -1,0 +1,38 @@
+:root{
+    --fonte_01: 'Roboto', sans-serif;
+    --cor_fundo_01: rgb(41, 58, 100);
+    --cor_titulo_b: white;  
+    --cor_titulo_p: black; 
+}
+
+body{
+    background-color: var(--cor_fundo_01);
+    font-family: var(--fonte_01);
+}
+
+h1{
+    color: var(--cor_titulo_b);
+    text-align: center;
+}
+
+
+section{
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 40%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+p{
+    color: var(--cor_titulo_b);
+    text-align: center;
+}
+
+footer>p{
+    font-style: italic;
+    font-size: 0.7em;
+}
