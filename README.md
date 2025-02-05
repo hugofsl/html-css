@@ -15,9 +15,10 @@
 **Você pode conferir alguns de meus projetos/exercícios pelos links abaixo 👇**
 
 <a target="_blank" href="https://hugofsl.github.io/html-css/javascript/ex001/index.html"> Exercício Hora do Dia</a>
- <a target="_blank" href="https://hugofsl.github.io/html-css/desafios/d10/index.html"> Mini Projeto - Desafio 10</a>
- <br>
- <a target="_blank" href="https://hugofsl.github.io/html-css/desafios/d11/index.html"> Astronauta - Desafio 11</a>
+<br>
+<a target="_blank" href="https://hugofsl.github.io/html-css/desafios/d10/index.html"> Mini Projeto - Desafio 10</a>
+<br>
+<a target="_blank" href="https://hugofsl.github.io/html-css/desafios/d11/index.html"> Astronauta - Desafio 11</a>
 
  
  
