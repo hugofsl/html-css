@@ -1,6 +1,6 @@
 :root{
     --fonte_01: 'Roboto', sans-serif;
-    --cor_fundo_01: rgb(41, 58, 100);
+    --cor_fundo_01: rgb(36, 58, 114);
     --cor_titulo_b: white;  
     --cor_titulo_p: black; 
 }
@@ -8,6 +8,7 @@
 body{
     background-color: var(--cor_fundo_01);
     font-family: var(--fonte_01);
+    margin: 0;
 }
 
 h1{
@@ -15,6 +16,11 @@ h1{
     text-align: center;
 }
 
+
+header{
+    padding: 10px;
+    text-align: center;
+}
 
 section{
     margin: 0 auto;
@@ -32,7 +38,7 @@ p{
     text-align: center;
 }
 
-footer>p{
+footer p{
     font-style: italic;
     font-size: 0.7em;
 }
