@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+<body>
+    <div>
+        <label for="frequency">Frequency: </label>
+        <input type="range" id="frequency" name="frequency" min="20" max="20000" value="440">
+        <span id="freqValue">440 Hz</span>
+    </div>
+    <button id="playButton">Play</button>
+    <button id="stopButton">Stop</button>
+
+    <script>
+        let audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        let oscillator;
+        let isPlaying = false;
+
+        document.getElementById('frequency').addEventListener('input', function() {
+            document.getElementById('freqValue').textContent = this.value + ' Hz';
+            if (oscillator) {
+                oscillator.frequency.setValueAtTime(this.value, audioContext.currentTime);
+            }
+        });
+
+        document.getElementById('playButton').addEventListener('click', function() {
+            if (!isPlaying) {
+                oscillator = audioContext.createOscillator();
+                oscillator.type = 'sawtooth';   
+                oscillator.frequency.setValueAtTime(document.getElementById('frequency').value, audioContext.currentTime);
+                oscillator.connect(audioContext.destination);
+                oscillator.start();
+                isPlaying = true;
+            }
+        });
+
+        document.getElementById('stopButton').addEventListener('click', function() {
+            if (isPlaying) {
+                oscillator.stop();
+                isPlaying = false;
+            }
+        });
+    </script>
+</body>
+</html>

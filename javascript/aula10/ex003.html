@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .calculator {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .calculator h1 {
+            margin-bottom: 20px;
+        }
+        .calculator input[type="number"] {
+            width: calc(50% - 10px);
+            padding: 10px;
+            margin: 5px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .calculator input[type="button"] {
+            width: calc(15% - 2px);
+            padding: 10px;
+            margin: 5px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .calculator input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+        .calculator #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .display {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 24px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora idiotinha 🧮🤓</h1>
+        <div class="display" id="display">0</div>
+        <input type="button" value="1" onclick="appendNumber(1)">
+        <input type="button" value="2" onclick="appendNumber(2)">
+        <input type="button" value="3" onclick="appendNumber(3)">
+        <input type="button" value="4" onclick="appendNumber(4)">
+        <input type="button" value="5" onclick="appendNumber(5)">
+        <input type="button" value="6" onclick="appendNumber(6)">
+        <input type="button" value="7" onclick="appendNumber(7)">
+        <input type="button" value="8" onclick="appendNumber(8)">
+        <input type="button" value="9" onclick="appendNumber(9)">
+        <input type="button" value="0" onclick="appendNumber(0)">
+        <input type="button" value="." onclick="appendNumber('.')">
+        <br>
+        <input type="button" value="+" onclick="appendOperator('+')">
+        <input type="button" value="-" onclick="appendOperator('-')">
+        <input type="button" value="*" onclick="appendOperator('*')">
+        <input type="button" value="/" onclick="appendOperator('/')">
+        <br>
+        <input type="button" value="C" onclick="clearDisplay()">
+        <input type="button" value="=" onclick="calculateResult()">
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        let displayValue = '';
+
+        function appendNumber(number) {
+            displayValue += number;
+            document.getElementById('display').textContent = displayValue;
+        }
+
+        function appendOperator(operator) {
+            displayValue += ` ${operator} `;
+            document.getElementById('display').textContent = displayValue;
+        }
+
+        function clearDisplay() {
+            displayValue = '';
+            document.getElementById('display').textContent = '0';
+        }
+
+        function calculateResult() {
+            try {
+                const result = eval(displayValue);
+                document.getElementById('display').textContent = result;
+                displayValue = result;
+            } catch (error) {
+                document.getElementById('display').textContent = 'Erro';
+                displayValue = '';
+            }
+        }
+    </script>
+</body>
+</html>

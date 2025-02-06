@@ -29,20 +29,22 @@ section{
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: center; /* Center content within section */
+    text-align: center; 
 }
 
 img.imagem{
-    padding: 10px;
+    padding: 0px;
     border-radius: 50%;
-    width: 195px; /* Increase the size by 30% */
-    height: 195px; /* Increase the size by 30% */
+    width: 215px; 
+    height: 215px; 
     display: block;
-    margin: 0 auto; /* Center the image */
+    margin: 0 auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
 p{
-    color: black; /* Always black */
+    color: black; 
     text-align: center;
 }
 
