@@ -35,7 +35,7 @@ function verificar() {
                     res.textContent = `Você é um adolescente de ${resIdade} anos.`;
                     foto.style.display = "block";
                     foto.src = "imgs/adole_M.png";
-                } else if (resIdade <= 30) {
+                } else if (resIdade <= 38) {
                     res.textContent = `Você é um rapaz de ${resIdade} anos.`;
                     foto.style.display = "block";
                     foto.src = "imgs/rapaz.png";
@@ -63,7 +63,7 @@ function verificar() {
                     res.textContent = `Você é uma adolescente de ${resIdade} anos.`;
                     foto.style.display = "block";
                     foto.src = "imgs/adole_F.png";
-                } else if (resIdade <= 30) {
+                } else if (resIdade <= 38) {
                     res.textContent = `Você é uma moça de ${resIdade} anos.`;
                     foto.style.display = "block";
                     foto.src = "imgs/moca.png";
