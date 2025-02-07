@@ -1,6 +1,8 @@
-const data = new Date(); // Fix the method to get the current date
-let hora = data.getHours();
 
+function pageLoad(){
+const data = new Date(); // Fix the method to get the current date
+}
+let hora = data.getHours();
 if (hora < 12) {
     document.querySelector("body").style.backgroundColor = "rgb(238, 230, 182)";
     document.querySelector("h1").style.color = "var(--cor_titulo_p)"; // Correct the CSS variable usage
