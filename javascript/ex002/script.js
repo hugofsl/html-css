@@ -1,29 +1,28 @@
 function verificar() {
-    console.log("Button clicked");
+    console.log("Button clicked"); //Para debug do acionamento da função pelo botão
     const dataatual = new Date();
-    var res = document.getElementById("res");
-    var idade = document.querySelector("input[name='txtdata']").value;
-    var resIdade = dataatual.getFullYear() - Number(idade);
-    var sexo = document.querySelector("input[name='txtsexo']:checked"); // Get the checked value from the radio inputs  
-    var foto = document.getElementById("foto");
-    if (sexo == null || idade == "" || resIdade <= 0) {
+    let res = document.getElementById("res");
+    let idade = document.querySelector("input[name='txtdata']").value;
+    let resIdade = dataatual.getFullYear() - Number(idade);
+    let sexo = document.querySelector("input[name='txtsexo']:checked");
+    let foto = document.getElementById("foto");
+    if (sexo == null || idade == "" || idade == null) {
         res.textContent = "Preencha os campos antes de verificar!";
         foto.style.display = "none";
     } else {
         sexo = sexo.value;
 
         try {
-            if (resIdade < 0 || idade == null || isNaN(idade)) {
+            if (resIdade <= 0 || resIdade > 120 || isNaN(idade)) {
                 res.textContent = "Idade inválida (menor que zero, vazia ou NaN)";
                 foto.style.display = "none";
-            }
-            else if (resIdade > 120) {
-                res.textContent =`Idade inválida (${resIdade} anos)`;
-                foto.style.display = "none";
-            }
-
+            } 
             else if (sexo == "M") {
-                if (resIdade <= 5) {
+                if (resIdade == 1) {
+                    res.textContent = `Você é um bebê de ${resIdade} ano.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/bebe.png";
+                } else if (resIdade <= 5) {
                     res.textContent = `Você é um bebê de ${resIdade} anos.`;
                     foto.style.display = "block";
                     foto.src = "imgs/bebe.png";
@@ -52,6 +51,10 @@ function verificar() {
 
             else if (sexo == "F") {
                 if (resIdade <= 5) {
+                    res.textContent = `Você é uma bebê de ${resIdade} ano.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/bebe.png";
+                } else if (resIdade <= 5) {
                     res.textContent = `Você é uma bebê de ${resIdade} anos.`;
                     foto.style.display = "block";
                     foto.src = "imgs/bebe.png";
