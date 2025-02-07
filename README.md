@@ -16,15 +16,9 @@
 
 <a target="_blank" href="https://hugofsl.github.io/html-css/javascript/ex002/index.html"> Exercício Contador de Idade</a>
 
-<br>
-
 <a target="_blank" href="https://hugofsl.github.io/html-css/javascript/ex001/index.html"> Exercício Hora do Dia</a>
 
-<br>
-
 <a target="_blank" href="https://hugofsl.github.io/html-css/desafios/d10/index.html"> Mini Projeto - Desafio 10</a>
-
-<br>
 
 <a target="_blank" href="https://hugofsl.github.io/html-css/desafios/d11/index.html"> Astronauta - Desafio 11</a>
 
