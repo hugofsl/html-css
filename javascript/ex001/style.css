@@ -9,16 +9,15 @@ body{
     background-color: var(--cor_fundo_01);
     font-family: var(--fonte_01);
     margin: 0;
+    text-align: center;
 }
 
 h1{
     color: var(--cor_titulo_b);
-    text-align: center;
 }
 
 header{
     padding: 10px;
-    text-align: center;
 }
 
 section{
@@ -29,7 +28,6 @@ section{
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: center; 
 }
 
 img.imagem{
@@ -45,7 +43,6 @@ img.imagem{
 
 p{
     color: black; 
-    text-align: center;
 }
 
 footer p{
