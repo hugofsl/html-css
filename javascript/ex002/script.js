@@ -83,7 +83,7 @@ function verificar() {
 
         } catch (error) {
             res.textContent = `Erro: ${error}`;
-            foto.style.display = "block";
+            foto.style.display = "none";
         }
     }
 }
