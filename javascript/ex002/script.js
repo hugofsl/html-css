@@ -14,7 +14,7 @@ function verificar() {
 
         try {
             if (resIdade <= 0 || resIdade > 120 || isNaN(idade)) {
-                res.textContent = "Idade inválida (menor que zero, vazia ou NaN)";
+                res.textContent = "Idade inválida (menor que zero, maior que 120, vazia ou NaN)";
                 foto.style.display = "none";
             } 
             else if (sexo == "M") {
