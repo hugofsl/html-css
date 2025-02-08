@@ -11,7 +11,6 @@ function verificar() {
         foto.style.display = "none";
     } else {
         sexo = sexo.value;
-
         try {
             if (resIdade <= 0 || resIdade > 120 || isNaN(idade)) {
                 res.textContent = "Idade inválida (menor que zero, maior que 120, vazia ou NaN)";
@@ -48,7 +47,6 @@ function verificar() {
                     foto.src = "imgs/idoso.png";
                 }
             }
-
             else if (sexo == "F") {
                 if (resIdade <= 5) {
                     res.textContent = `Você é uma bebê de ${resIdade} ano.`;
@@ -80,7 +78,6 @@ function verificar() {
                     foto.src = "imgs/idosa.png";
                 }
             }
-
         } catch (error) {
             res.textContent = `Erro: ${error}`;
             foto.style.display = "none";
