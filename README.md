@@ -14,6 +14,8 @@
 
 **Você pode conferir alguns de meus projetos/exercícios pelos links abaixo 👇**
 
+<a target="_blank" href="https://hugofsl.github.io/html-css/javascript/ex003-pizza/index.html"> Exercício Come-pizza</a>
+
 <a target="_blank" href="https://hugofsl.github.io/html-css/javascript/ex002/index.html"> Exercício Contador de Idade</a>
 
 <a target="_blank" href="https://hugofsl.github.io/html-css/javascript/ex001/index.html"> Exercício Hora do Dia</a>

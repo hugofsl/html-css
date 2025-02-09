@@ -1,0 +1,94 @@
+:root{
+    --fonte_01: 'Roboto', sans-serif;
+    --cor_fundo_01: rgb(8, 61, 15);
+    --cor_titulo_b: white;  
+    --cor_titulo_p: black; 
+}
+
+body{
+    background-color: var(--cor_fundo_01);
+    font-family: var(--fonte_01);
+    margin: 0;
+}
+
+h1{
+    color: var(--cor_titulo_b);
+    text-align: center;
+}
+
+
+header{
+    padding: 10px;
+    text-align: center;
+}
+
+section{
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 40%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+p{
+    color: var(--cor_titulo_b);
+    text-align: center;
+}
+
+footer p{
+    font-style: italic;
+    font-size: 0.7em;
+}
+
+button{
+    background-color: rgb(94, 4, 4);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+button:hover{
+    background-color: rgb(58, 2, 2);
+}
+
+
+.pizza-container {
+    margin: auto;
+    position: relative;
+    width: 300px;  
+    height: 300px; 
+  }
+  
+  .slice {
+    position: absolute;
+    width: 100%; /* Cada fatia deve cobrir a área total */
+    height: 100%;
+    transform-origin: center;
+    transition: clip-path 0.5s ease-in-out;
+  }
+  
+  /* Posicionamento das fatias */
+  .slice-1 { transform: rotate(0deg); }
+  .slice-2 { transform: rotate(45deg); }
+  .slice-3 { transform: rotate(90deg); }
+  .slice-4 { transform: rotate(135deg); }
+  .slice-5 { transform: rotate(180deg); }
+  .slice-6 { transform: rotate(225deg); }
+  .slice-7 { transform: rotate(270deg); }
+  .slice-8 { transform: rotate(315deg); }
+
+  @keyframes slice {
+    0% { clip-path: circle(100% at 50% 50%); } /* Inicialmente, a fatia inteira aparece */
+    25% { clip-path: circle(80% at 80% 20%); }
+    50% { clip-path: circle(60% at 70% 30%); }
+    75% { clip-path: circle(40% at 50% 50%); }
+    100% { clip-path: circle(0% at 50% 50%); } /* No final, a fatia some */
+  }
