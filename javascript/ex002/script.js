@@ -1,45 +1,90 @@
-function OnLoad(){
-    
-    }
-
-function verificar(){
-    console.log("Button clicked");
+function verificar() {
+    console.log("Button clicked"); //Para debug do acionamento da função pelo botão
     const dataatual = new Date();
-    let sexo = document.querySelector("input[type='radio']").value
-
-    let idade = document.querySelector("input[name='txtdata']").value
-
     let res = document.getElementById("res");
-
+    let idade = document.querySelector("input[name='txtdata']").value;
     let resIdade = dataatual.getFullYear() - Number(idade);
-    
-    try {
-        if (sexo != "F" && sexo != "M" || sexo == "") {
-            throw "Sexo inválido";
-        }
-        if (resIdade < 0 || idade == "" || isNaN(idade)){
-            throw "Idade inválida (menor que zero ou NaN)";
-        }
+    let sexo = document.querySelector("input[name='txtsexo']:checked");
+    let foto = document.getElementById("foto");
+    if (sexo == null || idade == "" || idade == null) {
+        res.textContent = "Preencha os campos antes de verificar!";
+        foto.style.display = "none";
+    } else {
+        sexo = sexo.value;
 
-        if (resIdade > 120){
-            throw "Idade inválida (provavelmente)";
-        }
+        try {
+            if (resIdade <= 0 || resIdade > 120 || isNaN(idade)) {
+                res.textContent = "Idade inválida (menor que zero, maior que 120, vazia ou NaN)";
+                foto.style.display = "none";
+            } 
+            else if (sexo == "M") {
+                if (resIdade == 1) {
+                    res.textContent = `Você é um bebê de ${resIdade} ano.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/bebe.png";
+                } else if (resIdade <= 5) {
+                    res.textContent = `Você é um bebê de ${resIdade} anos.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/bebe.png";
+                } else if (resIdade <= 12) {
+                    res.textContent = `Você é um menino de ${resIdade} anos.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/crianca_M.png";
+                } else if (resIdade <= 18) {
+                    res.textContent = `Você é um adolescente de ${resIdade} anos.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/adole_M.png";
+                } else if (resIdade <= 38) {
+                    res.textContent = `Você é um rapaz de ${resIdade} anos.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/rapaz.png";
+                } else if (resIdade <= 50) {
+                    res.textContent = `Você é um homem de ${resIdade} anos.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/homem.png";
+                } else {
+                    res.textContent = `Você é um senhor de ${resIdade} anos.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/idoso.png";
+                }
+            }
 
-        if (sexo == "M" && resIdade >= 18){
-            res.innerHTML = "Você é um homem maior de idade.";
-        } 
-        else if (sexo == "M" && resIdade < 18){
-            res.innerHTML = "Você é um homem menor de idade.";
-        } 
-        else if (sexo == "F" && resIdade >= 18){
-            res.innerHTML = "Você é uma mulher maior de idade.";
-        } 
-        else {
-            res.innerHTML = "Você é uma mulher menor de idade.";
+            else if (sexo == "F") {
+                if (resIdade <= 5) {
+                    res.textContent = `Você é uma bebê de ${resIdade} ano.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/bebe.png";
+                } else if (resIdade <= 5) {
+                    res.textContent = `Você é uma bebê de ${resIdade} anos.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/bebe.png";
+                } else if (resIdade <= 12) {
+                    res.textContent = `Você é uma menina de ${resIdade} anos.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/crianca_F.png";
+                } else if (resIdade <= 18) {
+                    res.textContent = `Você é uma adolescente de ${resIdade} anos.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/adole_F.png";
+                } else if (resIdade <= 38) {
+                    res.textContent = `Você é uma moça de ${resIdade} anos.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/moca.png";
+                } else if (resIdade <= 50) {
+                    res.textContent = `Você é uma mulher de ${resIdade} anos.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/mulher.png";
+                } else {
+                    res.textContent = `Você é uma senhora de ${resIdade} anos.`;
+                    foto.style.display = "block";
+                    foto.src = "imgs/idosa.png";
+                }
+            }
+
+        } catch (error) {
+            res.textContent = `Erro: ${error}`;
+            foto.style.display = "none";
         }
-    } catch (error) {
-        res.innerHTML = `Erro: ${error}`;
     }
-
 }
 
