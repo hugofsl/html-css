@@ -1,0 +1,80 @@
+:root{
+    --fonte_01: 'Roboto', sans-serif;
+    --cor_fundo_01: rgb(36, 58, 114);
+    --cor_titulo_b: white;  
+    --cor_titulo_p: black; 
+}
+
+body{
+    background-color: var(--cor_fundo_01);
+    font-family: var(--fonte_01);
+    margin: 0;
+}
+
+body div{
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+    color: var(--cor_titulo_b);
+    text-align: center;
+}
+
+header{
+    padding: 10px;
+    text-align: center;
+}
+
+section{
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 60%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+input#inputnum{
+    width: 50%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor_fundo_01);
+    color: var(--cor_titulo_b);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+select{
+    width: 50%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+p{
+    color: var(--cor_titulo_p);
+    text-align: center;
+}
+
+div#res>p{
+    font-weight: bold;
+}
+
+footer p{
+    font-style: italic;
+    font-size: 0.7em;
+    color: var(--cor_titulo_b);
+
+}

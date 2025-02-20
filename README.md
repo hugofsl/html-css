@@ -10,9 +10,13 @@
 *• Amante de jogos táticos e de estratégia*
 
 
- Este repositório é destinado aos meus exercícios e desafios do Curso de HTML e CSS e Javascript com o Gustavo Guanabara do Curso em Vídeo, além de alguns projetos pessoais.
+ Este repositório é destinado aos meus exercícios e desafios do Curso de HTML e CSS e Javascript com o Gustavo Guanabara do Curso em Vídeo, além de alguns projetos pessoais e outros estudos.
 
 **Você pode conferir alguns de meus projetos/exercícios pelos links abaixo 👇**
+
+<a target="_blank" href="https://hugofsl.github.io/html-css/javascript/ex005-mili/index.html"> Quanto tempo leva para ser um milionário?💸</a>
+
+<a target="_blank" href="https://hugofsl.github.io/html-css/javascript/ex004/index.html"> Analisador de números</a>
 
 <a target="_blank" href="https://hugofsl.github.io/html-css/javascript/ex003-pizza/index.html"> Exercício Come-pizza</a>
 

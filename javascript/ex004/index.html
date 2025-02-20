@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de números</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+    <section>
+        <div>
+            <label for="num">Digite um número (1 a 100):</label>
+            <input type="number" name="txtnum" id="inputnum">       
+            <button id="botaoadc" onclick="adcnum()">Adicionar número</button>   
+            <div><select name="lista" id="selnums" size="6"></select></div>  
+        </div>        
+        <div>
+            <button id="botaofinalizar" onclick="finalizar()">Analisar lista</button>
+            <div id="res"></div>  
+        </div>
+    </section>
+    <footer>
+        <p>Desenvolvido por: Hugo Lourenço com &copy;Curso em Vídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
