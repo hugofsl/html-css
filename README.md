@@ -14,7 +14,7 @@
 
 **Você pode conferir alguns de meus projetos/exercícios pelos links abaixo 👇**
 
-<a target="_blank" href="https://hugofsl.github.io/html-css/javascript/ex005-mili/index.html"> Quanto tempo leva para ser um milionário?💸</a>
+<a target="_blank" href="https://hugofsl.github.io/html-css/javascript/ex005-mili/index.html"> Quanto tempo leva para ser um bilionário?💸</a>
 
 <a target="_blank" href="https://hugofsl.github.io/html-css/javascript/ex004/index.html"> Analisador de números</a>
 
