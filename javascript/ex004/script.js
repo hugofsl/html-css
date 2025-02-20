@@ -23,7 +23,10 @@ function adcnum(){
 
 
 function finalizar(){
-
+    if(listanum.length == 0){
+        alert("Adicione números antes de finalizar!");
+    }
+    else{
     let resultado = document.querySelector("div#res");    
     listanum.sort();
 
@@ -34,5 +37,14 @@ function finalizar(){
     for (let i in listanum){soma += listanum[i];}
     resultado.innerHTML += `<p>Somando todos os valores, temos ${soma}.</p>`;
     resultado.innerHTML += `<p>A média dos valores digitados é ${soma / listanum.length}.</p>`;
+    listanum = [];
+    }
+}
+
+function limpar(){
+    let resultado = document.querySelector("div#res");    
+    resultado.innerHTML = "";
+    let select = document.querySelector("select[name='lista']");
+    select.innerHTML = "";
     listanum = [];
 }
