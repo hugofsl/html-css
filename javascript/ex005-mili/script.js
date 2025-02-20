@@ -11,10 +11,10 @@ function calcular(){
             let anos = Math.floor(meses / 12);
             let geracoes = Math.floor(anos / 30);    
             if(anos >= 11500 && anos <= 115000){       
-            resultado.innerHTML = `Você levaria <strong>${meses.toLocaleString("pt-BR")}</strong> meses, que são <strong>${anos.toLocaleString("pt-BR")}</strong> anos para juntar 1 bilhão de reais. Ou seja, você precisaria ter nascido no <strong>Pleistoceno (última era glacial) 🥶</strong>. Sua família teria passado por aproximadamente <strong>${geracoes.toLocaleString("pt-BR")}</strong> gerações. Sem contar que seria necessário guardar cada centavo.`;
+            resultado.innerHTML = `Você levaria <strong>${meses.toLocaleString("pt-BR")}</strong> meses, que são <strong>${anos.toLocaleString("pt-BR")}</strong> anos para juntar 1 bilhão de biscoitos. Ou seja, você precisaria ter nascido no <strong>Pleistoceno (última era glacial) 🥶</strong>. Sua família teria passado por aproximadamente <strong>${geracoes.toLocaleString("pt-BR")}</strong> gerações. Sem contar que seria necessário guardar cada biscoito.`;
             }
             else{
-                resultado.innerHTML = `Você levaria <strong>${meses.toLocaleString("pt-BR")}</strong> meses, que são <strong>${anos.toLocaleString("pt-BR")}</strong> anos para juntar 1 bilhão de reais. Sua família teria passado por aproximadamente <strong>${geracoes.toLocaleString("pt-BR")}</strong> gerações. Sem contar que seria necessário guardar cada centavo.`;	
+                resultado.innerHTML = `Você levaria <strong>${meses.toLocaleString("pt-BR")}</strong> meses, que são <strong>${anos.toLocaleString("pt-BR")}</strong> anos para juntar 1 bilhão de biscoitos. Sua família teria passado por aproximadamente <strong>${geracoes.toLocaleString("pt-BR")}</strong> gerações. Sem contar que seria necessário guardar cada biscoito.`;	
             }
         }   
     
