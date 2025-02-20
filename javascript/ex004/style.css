@@ -55,6 +55,10 @@ button{
     font-weight: bold;
 }
 
+button:hover{
+    background-color: rgb(15, 30, 66);
+}
+
 select{
     width: 50%;
     padding: 5px;

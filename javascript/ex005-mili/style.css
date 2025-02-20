@@ -76,6 +76,9 @@ button{
     font-weight: bold;
 }
 
+button:hover{
+    background-color: rgb(16, 44, 3);
+}
 
 p{
     color: var(--cor_titulo_p);
