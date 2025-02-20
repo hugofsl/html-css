@@ -14,17 +14,19 @@ function adcnum(){
         select.appendChild(item);
         listanum.push(num);}
 
-    let resetnum = document.querySelector("input[name='txtnum']");resetnum.value = "";
     let resultado = document.querySelector("div#res");
     if(resultado.innerHTML != ""){
         resultado.innerHTML = "";
     }
+    let resetnum = document.querySelector("input[name='txtnum']");
+    resetnum.value = "";
+    resetnum.focus();
 }
 
 
 function finalizar(){
     if(listanum.length == 0){
-        alert("Adicione números antes de finalizar!");
+        alert("Adicione números antes de analisar!");
     }
     else{
     let resultado = document.querySelector("div#res");    
